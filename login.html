@@ -31,19 +31,19 @@
         <h3>源码后台系统</h3>
         <!-- 登录模块 -->
         <div class="login-box">
-            <form class="layui-form" action="">
+            <form class="layui-form" action="" id="form_dl">
                 <div class="layui-form-item">
-                    <i class="layui-icon layui-icon-username"></i> 
-                    <input type="text" name="uid" required lay-verify="uid" placeholder="请输入账号"
-                        autocomplete="off" class="layui-input">
+                    <i class="layui-icon layui-icon-username"></i>
+                    <input type="text" name="uid" required lay-verify="uid" placeholder="请输入账号" autocomplete="off"
+                        class="layui-input dl_zhanghao">
                 </div>
                 <div class="layui-form-item">
-                    <i class="layui-icon layui-icon-password"></i> 
+                    <i class="layui-icon layui-icon-password"></i>
                     <input type="password" name="upwd" required lay-verify="required|upwd" placeholder="请输入6-18位密码"
-                        autocomplete="off" class="layui-input">
+                        autocomplete="off" class="layui-input dl_mima">
                 </div>
                 <div class="layui-form-item">
-                    <button lay-submit="" class="layui-btn layui-btn-fluid">登录</button>
+                    <button lay-submit="" class="layui-btn layui-btn-fluid" id="Enter">登录</button>
                 </div>
             </form>
             <span>
@@ -52,33 +52,34 @@
         </div>
         <!-- 注册模块 -->
         <div class="reg-box">
-            <form class="layui-form" action="">
+            <form class="layui-form" id="form_zc" action="">
                 <div class="layui-form-item">
-                    <i class="layui-icon layui-icon-username"></i> 
+                    <i class="layui-icon layui-icon-username"></i>
                     <input type="text" name="title" required lay-verify="required|uid" placeholder="请输入账号"
-                        autocomplete="off" class="layui-input">
+                        autocomplete="off" class="layui-input zhanghao">
                 </div>
                 <div class="layui-form-item">
-                    <i class="layui-icon layui-icon-user"></i> 
+                    <i class="layui-icon layui-icon-user"></i>
                     <input type="text" name="title" required lay-verify="required" placeholder="请输入姓名"
-                        autocomplete="off" class="layui-input">
+                        autocomplete="off" class="layui-input yonghuming">
                 </div>
                 <div class="layui-form-item">
-                    <i class="layui-icon layui-icon-email"></i> 
+                    <i class="layui-icon layui-icon-email"></i>
                     <input type="email" name="title" required lay-verify="required|email" placeholder="请输入邮箱"
-                        autocomplete="off" class="layui-input">
+                        autocomplete="off" class="layui-input youxiang">
                 </div>
                 <div class="layui-form-item">
-                    <i class="layui-icon layui-icon-password"></i> 
+                    <i class="layui-icon layui-icon-password"></i>
                     <input type="password" name="title" required lay-verify="required|upwd" placeholder="请输入6-18位密码"
-                        autocomplete="off" class="layui-input">
+                        autocomplete="off" class="layui-input mima">
                 </div>
                 <div class="layui-form-item">
-                    <button lay-submit="" class="layui-btn layui-btn-fluid">注册</button>
+                    <button lay-submit="" class="layui-btn layui-btn-fluid" id="Register">注册</button>
                 </div>
             </form>
             <a href="javascript:;" class="link-login">登录</a>
         </div>
     </div>
 </body>
+
 </html>
