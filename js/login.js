@@ -63,10 +63,13 @@ $(function () {
                         content: res.msg
                     });
                 }
+                localStorage.setItem("token", res.token);
+                sessionStorage.setItem("refresh", true);
                 layer.open({
                     title: '注意',
                     content: '登录成功！'
                 });
+                location.href = "./index.html";
             }
         });
     });
